@@ -1,0 +1,620 @@
+[
+  {
+    "PK": "DEVICE#laptop",
+    "SK": "RULE#not_charging",
+    "deviceId": "laptop",
+    "ruleId": "not_charging",
+    "symptomLabel": "Laptop not charging",
+    "questions": [
+      {
+        "id": "charging_led",
+        "text": "Does the charging LED turn on when plugged in?",
+        "type": "boolean"
+      },
+      {
+        "id": "works_on_battery",
+        "text": "Does the laptop work normally on battery power alone?",
+        "type": "boolean"
+      },
+      {
+        "id": "intermittent",
+        "text": "Does charging work intermittently when the cable is wiggled?",
+        "type": "boolean"
+      },
+      {
+        "id": "tested_other_charger",
+        "text": "Have you tested with another known working charger?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "burning_smell",
+      "sparks",
+      "swollen_battery",
+      "electric_shock"
+    ],
+    "possibleIssues": [
+      "charging_port",
+      "charger",
+      "battery",
+      "charging_circuit"
+    ]
+  },
+  {
+    "PK": "DEVICE#laptop",
+    "SK": "RULE#wont_turn_on",
+    "deviceId": "laptop",
+    "ruleId": "wont_turn_on",
+    "symptomLabel": "Laptop won't turn on",
+    "questions": [
+      {
+        "id": "fan_spinning",
+        "text": "Do you hear the internal fans spin or feel airflow?",
+        "type": "boolean"
+      },
+      {
+        "id": "power_led",
+        "text": "Does any power indicator light light up when pressing the power button?",
+        "type": "boolean"
+      },
+      {
+        "id": "hard_reset_tried",
+        "text": "Have you held the power button for 30 seconds to perform a hard reset?",
+        "type": "boolean"
+      },
+      {
+        "id": "display_backlight",
+        "text": "Can you see a faint backlight on the screen in a dark room?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "burning_smell",
+      "sparks",
+      "swollen_battery"
+    ],
+    "possibleIssues": [
+      "motherboard_fault",
+      "ram_failure",
+      "power_button",
+      "battery"
+    ]
+  },
+  {
+    "PK": "DEVICE#laptop",
+    "SK": "RULE#overheating",
+    "deviceId": "laptop",
+    "ruleId": "overheating",
+    "symptomLabel": "Laptop overheating or thermal throttling",
+    "questions": [
+      {
+        "id": "fan_loud",
+        "text": "Is the cooling fan constantly running at maximum speed or making grinding noises?",
+        "type": "boolean"
+      },
+      {
+        "id": "shuts_down_heavy_load",
+        "text": "Does the laptop shut down abruptly during games or video editing?",
+        "type": "boolean"
+      },
+      {
+        "id": "vents_clean",
+        "text": "Are the heat exhaust vents clear of visible dust?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "burning_smell",
+      "smoke",
+      "hot_to_touch_battery"
+    ],
+    "possibleIssues": [
+      "fan_dust_buildup",
+      "thermal_paste_degraded",
+      "fan_motor_failure"
+    ]
+  },
+  {
+    "PK": "DEVICE#laptop",
+    "SK": "RULE#screen_issue",
+    "deviceId": "laptop",
+    "ruleId": "screen_issue",
+    "symptomLabel": "Laptop screen flickering, lines, or black display",
+    "questions": [
+      {
+        "id": "external_monitor_works",
+        "text": "Does the laptop display properly when connected to an external TV or monitor?",
+        "type": "boolean"
+      },
+      {
+        "id": "flicker_on_hinge_move",
+        "text": "Does the screen glitch or change when opening or closing the lid hinge?",
+        "type": "boolean"
+      },
+      {
+        "id": "visible_crack",
+        "text": "Is there any visible crack or bleeding ink patch on the glass panel?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "sparks",
+      "smoke"
+    ],
+    "possibleIssues": [
+      "display_cable",
+      "lcd_panel",
+      "gpu_failure"
+    ]
+  },
+  {
+    "PK": "DEVICE#smartphone",
+    "SK": "RULE#screen_cracked",
+    "deviceId": "smartphone",
+    "ruleId": "screen_cracked",
+    "symptomLabel": "Cracked smartphone glass or damaged OLED/LCD",
+    "questions": [
+      {
+        "id": "touch_responsive",
+        "text": "Does the touch screen still respond accurately to your touches across the whole surface?",
+        "type": "boolean"
+      },
+      {
+        "id": "black_spots_lines",
+        "text": "Are there colored vertical lines or dark ink-like bleed spots on the screen?",
+        "type": "boolean"
+      },
+      {
+        "id": "frame_bent",
+        "text": "Is the aluminum or plastic phone frame noticeably bent?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "swollen_battery",
+      "exposed_wiring",
+      "sparks"
+    ],
+    "possibleIssues": [
+      "front_glass_only",
+      "full_display_assembly",
+      "chassis_damage"
+    ]
+  },
+  {
+    "PK": "DEVICE#smartphone",
+    "SK": "RULE#battery_drain",
+    "deviceId": "smartphone",
+    "ruleId": "battery_drain",
+    "symptomLabel": "Fast battery drain or phone shutting down early",
+    "questions": [
+      {
+        "id": "drops_suddenly",
+        "text": "Does the battery percentage jump down abruptly (e.g., from 40% to 5%)?",
+        "type": "boolean"
+      },
+      {
+        "id": "back_cover_lifting",
+        "text": "Is the back glass or screen slightly lifting up or bulging outwards?",
+        "type": "boolean"
+      },
+      {
+        "id": "warm_on_idle",
+        "text": "Does the phone feel warm even when sitting idle in your pocket?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "swollen_battery",
+      "burning_smell",
+      "extreme_heat"
+    ],
+    "possibleIssues": [
+      "battery_degradation",
+      "background_software_drain",
+      "power_management_ic"
+    ]
+  },
+  {
+    "PK": "DEVICE#smartphone",
+    "SK": "RULE#not_charging",
+    "deviceId": "smartphone",
+    "ruleId": "not_charging",
+    "symptomLabel": "Smartphone not charging or loose USB-C/Lightning cable",
+    "questions": [
+      {
+        "id": "cable_sits_flush",
+        "text": "Does the charging connector sit flush without wobbling inside the port?",
+        "type": "boolean"
+      },
+      {
+        "id": "wireless_charges",
+        "text": "If supported, does the phone charge on a wireless charging pad?",
+        "type": "boolean"
+      },
+      {
+        "id": "tried_cleaning_lint",
+        "text": "Have you inspected the charging port for compacted pocket lint?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "burning_smell",
+      "sparks",
+      "hot_charging_port"
+    ],
+    "possibleIssues": [
+      "port_lint_cleaning",
+      "usb_c_sub_board",
+      "charging_ic"
+    ]
+  },
+  {
+    "PK": "DEVICE#smartphone",
+    "SK": "RULE#water_damage",
+    "deviceId": "smartphone",
+    "ruleId": "water_damage",
+    "symptomLabel": "Water or liquid ingress",
+    "questions": [
+      {
+        "id": "phone_turned_off_immediately",
+        "text": "Did you immediately turn the phone off and leave it disconnected from power?",
+        "type": "boolean"
+      },
+      {
+        "id": "camera_fogged",
+        "text": "Is there visible condensation or fog inside the camera lenses?",
+        "type": "boolean"
+      },
+      {
+        "id": "speaker_muffled",
+        "text": "Are the speakers sounding crackly, muffled, or silent?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "smoke",
+      "burning_smell",
+      "hot_to_touch"
+    ],
+    "possibleIssues": [
+      "ultrasonic_cleaning_corrosion",
+      "display_water_damage",
+      "shorted_capacitors"
+    ]
+  },
+  {
+    "PK": "DEVICE#headphones",
+    "SK": "RULE#one_side_silent",
+    "deviceId": "headphones",
+    "ruleId": "one_side_silent",
+    "symptomLabel": "Headphones or earbuds silent on one side",
+    "questions": [
+      {
+        "id": "balance_checked",
+        "text": "Have you verified the audio balance slider in your device settings is centered?",
+        "type": "boolean"
+      },
+      {
+        "id": "crackles_on_wire_flex",
+        "text": "For wired models, does audio briefly cut in when bending the wire near the jack or earcup?",
+        "type": "boolean"
+      },
+      {
+        "id": "cleaned_wax_filter",
+        "text": "For in-ear earbuds, have you cleaned or inspected the mesh sound filter for wax buildup?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "exposed_wiring",
+      "sparks"
+    ],
+    "possibleIssues": [
+      "mesh_filter_clogged",
+      "headphone_jack_cable",
+      "speaker_driver_blown"
+    ]
+  },
+  {
+    "PK": "DEVICE#headphones",
+    "SK": "RULE#bluetooth_disconnect",
+    "deviceId": "headphones",
+    "ruleId": "bluetooth_disconnect",
+    "symptomLabel": "Wireless headphones disconnect or pairing fails",
+    "questions": [
+      {
+        "id": "powers_on_consistently",
+        "text": "Does the power/status LED illuminate reliably every time you power on?",
+        "type": "boolean"
+      },
+      {
+        "id": "factory_reset_done",
+        "text": "Have you performed a factory reset and cleared previous Bluetooth pairings?",
+        "type": "boolean"
+      },
+      {
+        "id": "battery_dies_quick",
+        "text": "Does the audio cut off within a few minutes of disconnecting from the charger?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "swollen_battery",
+      "burning_smell"
+    ],
+    "possibleIssues": [
+      "earbud_battery_replacement",
+      "bluetooth_antenna",
+      "firmware_corruption"
+    ]
+  },
+  {
+    "PK": "DEVICE#headphones",
+    "SK": "RULE#distorted_sound",
+    "deviceId": "headphones",
+    "ruleId": "distorted_sound",
+    "symptomLabel": "Rattling, buzzing, or distorted audio",
+    "questions": [
+      {
+        "id": "happens_low_volume",
+        "text": "Does the rattling noise happen even at moderate and low volume levels?",
+        "type": "boolean"
+      },
+      {
+        "id": "bass_heavy_only",
+        "text": "Does distortion only appear during heavy bass frequencies?",
+        "type": "boolean"
+      },
+      {
+        "id": "anc_noise",
+        "text": "If ANC is turned off, does the strange buzzing or high-pitched squeal disappear?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "burning_smell"
+    ],
+    "possibleIssues": [
+      "hair_on_diaphragm",
+      "damaged_driver_cone",
+      "anc_microphone_feedback"
+    ]
+  },
+  {
+    "PK": "DEVICE#headphones",
+    "SK": "RULE#broken_hinge_cable",
+    "deviceId": "headphones",
+    "ruleId": "broken_hinge_cable",
+    "symptomLabel": "Cracked headband, broken swivel hinge, or worn ear pads",
+    "questions": [
+      {
+        "id": "wire_pinched",
+        "text": "Is the internal wire running through the hinge visibly pinched or frayed?",
+        "type": "boolean"
+      },
+      {
+        "id": "audio_still_plays",
+        "text": "Does sound still play cleanly in both ears if you hold the broken pieces together?",
+        "type": "boolean"
+      },
+      {
+        "id": "screws_missing",
+        "text": "Are there loose or missing tiny screws at the folding joint?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "exposed_frayed_wiring"
+    ],
+    "possibleIssues": [
+      "replacement_swivel_hinge",
+      "earpad_cushion_replacement",
+      "headband_frame"
+    ]
+  },
+  {
+    "PK": "DEVICE#laptop",
+    "SK": "RULE#slow_performance",
+    "deviceId": "laptop",
+    "ruleId": "slow_performance",
+    "symptomLabel": "Laptop running very slow or freezing",
+    "questions": [
+      {
+        "id": "storage_full",
+        "text": "Is your hard drive or SSD nearly full?",
+        "type": "boolean"
+      },
+      {
+        "id": "high_ram_usage",
+        "text": "Do you have many tabs or heavy apps running simultaneously?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [],
+    "possibleIssues": [
+      "hdd_failing",
+      "insufficient_ram",
+      "malware_os_issue"
+    ]
+  },
+  {
+    "PK": "DEVICE#laptop",
+    "SK": "RULE#wifi_issues",
+    "deviceId": "laptop",
+    "ruleId": "wifi_issues",
+    "symptomLabel": "WiFi disconnecting or not finding networks",
+    "questions": [
+      {
+        "id": "other_devices_connect",
+        "text": "Can other devices connect to your WiFi fine?",
+        "type": "boolean"
+      },
+      {
+        "id": "airplane_mode_off",
+        "text": "Is Airplane mode turned off?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [],
+    "possibleIssues": [
+      "wifi_card_failure",
+      "antenna_disconnected",
+      "driver_issue"
+    ]
+  },
+  {
+    "PK": "DEVICE#laptop",
+    "SK": "RULE#trackpad_issues",
+    "deviceId": "laptop",
+    "ruleId": "trackpad_issues",
+    "symptomLabel": "Trackpad not responding or jumping",
+    "questions": [
+      {
+        "id": "external_mouse_works",
+        "text": "Does an external USB mouse work fine?",
+        "type": "boolean"
+      },
+      {
+        "id": "trackpad_bulging",
+        "text": "Is the trackpad physically bulging upwards?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "swollen_battery"
+    ],
+    "possibleIssues": [
+      "swollen_battery",
+      "trackpad_cable_loose",
+      "trackpad_failure"
+    ]
+  },
+  {
+    "PK": "DEVICE#smartphone",
+    "SK": "RULE#camera_not_working",
+    "deviceId": "smartphone",
+    "ruleId": "camera_not_working",
+    "symptomLabel": "Camera app crashing or photos blurry",
+    "questions": [
+      {
+        "id": "lens_scratched",
+        "text": "Is the outer glass covering the camera visibly cracked or scratched?",
+        "type": "boolean"
+      },
+      {
+        "id": "app_crashes",
+        "text": "Does the camera app show a black screen or crash immediately?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [],
+    "possibleIssues": [
+      "camera_module_failure",
+      "camera_lens_glass",
+      "software_glitch"
+    ]
+  },
+  {
+    "PK": "DEVICE#smartphone",
+    "SK": "RULE#buttons_unresponsive",
+    "deviceId": "smartphone",
+    "ruleId": "buttons_unresponsive",
+    "symptomLabel": "Power or volume buttons not clicking",
+    "questions": [
+      {
+        "id": "mushy_buttons",
+        "text": "Do the buttons feel 'mushy' and lack a distinct click?",
+        "type": "boolean"
+      },
+      {
+        "id": "case_removed",
+        "text": "Does the issue persist even when the phone case is removed?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [],
+    "possibleIssues": [
+      "button_flex_cable",
+      "debris_in_button",
+      "chassis_dent"
+    ]
+  },
+  {
+    "PK": "DEVICE#smartphone",
+    "SK": "RULE#network_issues",
+    "deviceId": "smartphone",
+    "ruleId": "network_issues",
+    "symptomLabel": "No cellular signal or dropped calls",
+    "questions": [
+      {
+        "id": "sim_reseated",
+        "text": "Have you tried removing and reinserting the SIM card?",
+        "type": "boolean"
+      },
+      {
+        "id": "wifi_works",
+        "text": "Does the phone connect to WiFi without issues?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [],
+    "possibleIssues": [
+      "sim_reader_damage",
+      "antenna_cable",
+      "baseband_ic"
+    ]
+  },
+  {
+    "PK": "DEVICE#headphones",
+    "SK": "RULE#case_not_charging",
+    "deviceId": "headphones",
+    "ruleId": "case_not_charging",
+    "symptomLabel": "Charging case won't charge or power on",
+    "questions": [
+      {
+        "id": "cable_tested",
+        "text": "Have you tested the charging cable with another device?",
+        "type": "boolean"
+      },
+      {
+        "id": "lint_in_port",
+        "text": "Is there lint or debris in the case's charging port?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [
+      "hot_to_touch"
+    ],
+    "possibleIssues": [
+      "case_battery_dead",
+      "charging_port_damaged",
+      "case_logic_board"
+    ]
+  },
+  {
+    "PK": "DEVICE#headphones",
+    "SK": "RULE#mic_not_working",
+    "deviceId": "headphones",
+    "ruleId": "mic_not_working",
+    "symptomLabel": "Microphone not picking up voice in calls",
+    "questions": [
+      {
+        "id": "muffled_voice",
+        "text": "Do callers say you sound very muffled or distant?",
+        "type": "boolean"
+      },
+      {
+        "id": "voice_memo_works",
+        "text": "Does the mic work if you record a local voice memo?",
+        "type": "boolean"
+      }
+    ],
+    "dangerousFlags": [],
+    "possibleIssues": [
+      "mic_mesh_clogged",
+      "microphone_component",
+      "bluetooth_profile_issue"
+    ]
+  }
+]

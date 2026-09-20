@@ -1,0 +1,33 @@
+[
+  {
+    "PK": "DEVICE#laptop",
+    "SK": "METADATA",
+    "deviceId": "laptop",
+    "name": "Laptop",
+    "icon": "laptop",
+    "commonSymptoms": ["not_charging", "wont_turn_on", "overheating", "screen_issue", "slow_performance", "wifi_issues", "trackpad_issues"]
+  },
+  {
+    "PK": "DEVICE#smartphone",
+    "SK": "METADATA",
+    "deviceId": "smartphone",
+    "name": "Smartphone",
+    "icon": "smartphone",
+    "commonSymptoms": ["screen_cracked", "battery_drain", "not_charging", "water_damage", "camera_not_working", "buttons_unresponsive", "network_issues"]
+  },
+  {
+    "PK": "DEVICE#headphones",
+    "SK": "METADATA",
+    "deviceId": "headphones",
+    "name": "Headphones / Earphones",
+    "icon": "headphones",
+    "commonSymptoms": [
+      "one_side_silent",
+      "bluetooth_disconnect",
+      "distorted_sound",
+      "broken_hinge_cable",
+      "case_not_charging",
+      "mic_not_working"
+    ]
+  }
+]

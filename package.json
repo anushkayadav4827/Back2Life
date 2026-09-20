@@ -1,0 +1,30 @@
+{
+  "name": "back2life",
+  "version": "0.1.0",
+  "description": "Repair Before Replacement - AI-assisted repair-vs-replace decision-support app",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "infra"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "test:unit": "npm run test:unit --workspace=backend",
+    "test:integration": "npm run test:integration --workspace=backend",
+    "test:e2e": "npm run test:e2e --workspace=frontend",
+    "dynamodb:local": "docker run -p 8000:8000 amazon/dynamodb-local",
+    "seed:local": "npm run seed:local --workspace=backend"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  }
+}
